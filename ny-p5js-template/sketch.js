@@ -5,6 +5,8 @@ async function setup() {
 
   colorMode(HSB);
 
+  fxpreview();
+  
   console.log(320 % 360);
   let hueA = 50;
   let satA = 89;
