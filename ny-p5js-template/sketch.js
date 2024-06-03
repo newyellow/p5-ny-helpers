@@ -1,4 +1,6 @@
 
+let customRand;
+
 async function setup() {
   createCanvas(800, 1000);
   background(0);
@@ -6,6 +8,16 @@ async function setup() {
   colorMode(HSB);
 
   fxpreview();
+
+  customRand = new NYRandomSystem("newyellow22 is here?");
+  console.log("testing random");
+  console.log(customRand.random(0, 100));
+  console.log(customRand.random(0, 100));
+  console.log(customRand.random(0, 100));
+  console.log(customRand.random(0, 100));
+  console.log(customRand.random(0, 100));
+  console.log(customRand.random(0, 100));
+  console.log(customRand.random(0, 100));
   
   console.log(320 % 360);
   let hueA = 50;
@@ -54,8 +66,6 @@ async function setup() {
     rect(200 + i, 300, 1, 60);
   }
 
-
-
   for (let i = 0; i < 400; i++) {
     let t = i / 400;
 
@@ -68,7 +78,6 @@ async function setup() {
 
     rect(200 + i, 400, 1, 60);
   }
-
 
   colorMode(HSB);
 
